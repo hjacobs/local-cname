@@ -26,20 +26,20 @@ It is self-contained and restores your local ``/etc/hosts`` file on exit (press 
 
 Installation:
 
-.. code-block::
+.. code-block:: bash
 
     $ sudo pip install -U local-cname
 
 Usage:
 
-.. code-block::
+.. code-block:: bash
 
     $ sudo local-cname FROM_DNS_NAME TO_DNS_NAME
       # press CTRL+C to cancel and restore your old /etc/hosts
 
 Example:
 
-.. code-block::
+.. code-block:: bash
 
     $ sudo local-cname google.com duckduckgo.com
     $ ping google.com
