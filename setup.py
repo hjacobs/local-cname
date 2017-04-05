@@ -14,8 +14,8 @@ def readme():
 setup(
     name='local-cname',
     packages=find_packages(),
-    version='0.2',
-    description='Local CNAME: ',
+    version='0.3',
+    description='Helper script to emulate a local CNAME DNS by writing to /etc/hosts',
     long_description=readme(),
     author='henning@jacobs1.de',
     url='https://github.com/hjacobs/local-cname',
@@ -28,8 +28,10 @@ setup(
         'Programming Language :: Python',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
         'Intended Audience :: Developers',
-        'Operating System :: OS Independent',
+        'Development Status :: 3 - Alpha',
+        'Operating System :: POSIX',
     ],
     entry_points={'console_scripts': ['local-cname = local_cname.cli:main']}
 )
