@@ -1,0 +1,9 @@
+dist/
+build/
+*.egg*
+*.pyc
+__pycache__
+.cache/
+*.swp
+.tox/
+.idea/
