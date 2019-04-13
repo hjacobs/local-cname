@@ -28,7 +28,7 @@ Installation:
 
 .. code-block:: bash
 
-    $ sudo pip install -U local-cname
+    $ pip install -U local-cname  # might need "sudo" or use "--user"
 
 Usage:
 
