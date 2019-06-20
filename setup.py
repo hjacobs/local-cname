@@ -22,7 +22,7 @@ setup(
     keywords='dns hosts local',
     license='GNU General Public License v3 (GPLv3)',
     setup_requires=['flake8'],
-    install_requires=['clickclick'],
+    install_requires=['clickclick', 'filelock'],
     tests_require=[],
     classifiers=[
         'Programming Language :: Python',
