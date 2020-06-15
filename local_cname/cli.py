@@ -1,6 +1,7 @@
 import argparse
 import socket
 import time
+import os
 from pathlib import Path
 
 from clickclick import Action, info
@@ -49,4 +50,9 @@ def main():
         # ignore, do not print stacktrace
         pass
     finally:
-        backup_file.rename(hosts_file)
+        try:
+            backup_file.rename(hosts_file)
+        except OSError:
+            with hosts_file.open('w') as fd:
+                fd.write(old_contents)
+            os.remove(backup_file)
