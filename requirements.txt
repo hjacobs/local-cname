@@ -1,0 +1,4 @@
+click>=7
+clickclick>=1.2
+zipp>=1
+PyYAML>=5
